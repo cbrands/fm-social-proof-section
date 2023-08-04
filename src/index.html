@@ -12,8 +12,8 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -33,64 +33,82 @@
   <body>
     <div class="container">
       <div class="hero">
-        <h1>10,000+ of our users love our products.</h1>
-        <p>We only provide great products combined with excellent customer service.
+        <h1 class="hero__title">10,000+ of our users love our products.</h1>
+        <p class="hero__text">We only provide great products combined with excellent customer service.
           See what our satisfied customers are saying about our services.</p>
       </div>
       <div class="ratings">
-        <rating>
-          <img src="assets/images/icon-star.svg" alt="">
-          <img src="assets/images/icon-star.svg" alt="">
-          <img src="assets/images/icon-star.svg" alt="">
-          <img src="assets/images/icon-star.svg" alt="">
-          <img src="assets/images/icon-star.svg" alt="">
-          <h2>Rated 5 Stars in Reviews</h2>
-        </rating>
-        <rating>
-          <img src="assets/images/icon-star.svg" alt="">
-          <img src="assets/images/icon-star.svg" alt="">
-          <img src="assets/images/icon-star.svg" alt="">
-          <img src="assets/images/icon-star.svg" alt="">
-          <img src="assets/images/icon-star.svg" alt="">
-          <h2>Rated 5 Stars in Report Guru</h2>
-        </rating>
-        <rating>
-          <img src="assets/images/icon-star.svg" alt="">
-          <img src="assets/images/icon-star.svg" alt="">
-          <img src="assets/images/icon-star.svg" alt="">
-          <img src="assets/images/icon-star.svg" alt="">
-          <img src="assets/images/icon-star.svg" alt="">
-          <h2>Rated 5 Stars in BestTech</h2>
-        </rating>
+        <div class="rating">
+          <div class="rating__stars">
+            <img src="assets/images/icon-star.svg" alt="">
+            <img src="assets/images/icon-star.svg" alt="">
+            <img src="assets/images/icon-star.svg" alt="">
+            <img src="assets/images/icon-star.svg" alt="">
+            <img src="assets/images/icon-star.svg" alt="">
+          </div>
+          <h2 class="rating__title">Rated 5 Stars in Reviews</h2>
+        </div>
+        <div class="rating">
+          <div class="rating__stars">
+            <img src="assets/images/icon-star.svg" alt="">
+            <img src="assets/images/icon-star.svg" alt="">
+            <img src="assets/images/icon-star.svg" alt="">
+            <img src="assets/images/icon-star.svg" alt="">
+            <img src="assets/images/icon-star.svg" alt="">
+          </div>
+          <h2 class="rating__title">Rated 5 Stars in Report Guru</h2>
+        </div>
+        <div class="rating">
+          <div class="rating__stars">
+            <img src="assets/images/icon-star.svg" alt="">
+            <img src="assets/images/icon-star.svg" alt="">
+            <img src="assets/images/icon-star.svg" alt="">
+            <img src="assets/images/icon-star.svg" alt="">
+            <img src="assets/images/icon-star.svg" alt="">
+          </div>
+          <h2 class="rating__title">Rated 5 Stars in BestTech</h2>
+        </div>
       </div>
-      <card>
-        <img src="assets/images/image-colton.jpg" alt="">
-        <h2>Colton Smith </h2>
-        <h3>Verified Buyer</h3>
-        <p>"We needed the same printed design as the one we had ordered a week prior.
+      <section class="testimony">
+        <div class="testimony__top">
+          <img class="testimony__image" src="assets/images/image-colton.jpg" alt="">
+          <div class="testimony__id">
+            <h2 class="testimony__name">Colton Smith </h2>
+            <h3 class="testimony__buyer">Verified Buyer</h3>
+          </div>
+        </div>
+        <p class="testimony__text">"We needed the same printed design as the one we had ordered a week prior.
           Not only did they find the original order, but we also received it in time.
           Excellent!"</p>
-      </card>
-      <card>
-        <img src="assets/images/image-irene.jpg" alt="">
-        <h2>Irene Roberts</h2>
-        <h3>Verified Buyer</h3>
-        <p>"Customer service is always excellent and very quick turn around. Completely
+      </section>
+      <section class="testimony">
+        <div class="testimony__top">
+          <img class="testimony__image" src="assets/images/image-irene.jpg" alt="">
+          <div class="testimony__id">
+            <h2 class="testimony__name">Irene Roberts</h2>
+            <h3 class="testimony__buyer">Verified Buyer</h3>
+          </div>
+        </div>
+        <p class="testimony__text">"Customer service is always excellent and very quick turn around. Completely
           delighted with the simplicity of the purchase and the speed of delivery."</p>
-      </card>
-      <card>
-        <img src="assets/images/image-anne.jpg" alt="">
-        <h2>Anne Wallace</h2>
-        <h3>Verified Buyer</h3>
-        <p>"Put an order with this company and can only praise them for the very high
+      </section>
+      <section class="testimony">
+        <div class="testimony__top">
+          <img class="testimony__image" src="assets/images/image-anne.jpg" alt="">
+          <div class="testimony__id">
+            <h2 class="testimony__name">Anne Wallace</h2>
+            <h3 class="testimony__buyer">Verified Buyer</h3>
+          </div>
+        </div>
+        <p class="testimony__text">"Put an order with this company and can only praise them for the very high
           standard. Will definitely use them again and recommend them to everyone!"</p>
-      </card>
+      </section>
     </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/cbrands/fm-social-proof-section">Charles</a>.
     </div>
   </body>
 </html>
